@@ -3,7 +3,8 @@
 ### Gereksinimler
 
 '''
- #> pip install wordlist 
- #> pip install termcolor
+
+ $> pip install wordlist 
+ $> pip install termcolor
  
 '''
