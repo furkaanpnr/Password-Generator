@@ -16,5 +16,5 @@
 ### Usage
 
 ```
-  $> python wordlistgenerator.py <min> <max> <string> fileName.txt"
+  $> python wordlistgenerator.py <min> <max> <string> fileName.txt
 ```
