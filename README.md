@@ -1,13 +1,13 @@
 # Password-Generator
 
-### Gereksinimler
+### Requirements
 
 ```
   $> pip install wordlist 
   $> pip install termcolor
 ```
 
-### Kullanım
+### Usage
 
 ```
   $> python wordlistgenerator.py <min> <max> <string> fileName.txt"
