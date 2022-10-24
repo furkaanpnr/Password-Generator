@@ -3,34 +3,34 @@ import wordlist
 from termcolor import colored
 
 try:
-    sayı1 = sys.argv[1]
-    sayı2 = sys.argv[2]
-    kelime = sys.argv[3]
-    dosyaİsmi = sys.argv[4]
-    sayı1 = int(sayı1)
-    sayı2 = int(sayı2)
+    number1 = sys.argv[1]
+    number2 = sys.argv[2]
+    letters = sys.argv[3]
+    fileName = sys.argv[4]
+    number1 = int(number1)
+    number2 = int(number2)
     
-    generator = wordlist.Generator(kelime)
-    wordlistYaz = open(dosyaİsmi , "a", encoding="utf-8")
+    generator = wordlist.Generator(letters)
+    wordlistWrite = open(fileName , "a", encoding="utf-8")
     
     index = 0
-    for i in generator.generate(sayı1,sayı2):
+    for i in generator.generate(number1,number2):
         index += 1
-        wordlistYaz.write(i)
-        wordlistYaz.write("\n")
+        wordlistWrite.write(i)
+        wordlistWrite.write("\n")
         print(colored(f"\r-*^*-> {i}", "green"), end="")
-    print(colored(f"\nToplam {index} kombinasyon hesaplandı ve yazıldı...", "green"))
-    wordlistYaz.close()
+    print(colored(f"\nA total of {index} combinations were calculated and written...", "green"))
+    wordlistWrite.close()
     
 except KeyboardInterrupt:
-    print(colored(f"\nElle durduruldu!", "blue"))
-    print(colored(f"Toplam {index} kombinasyon hesaplandı ve yazıldı...", "blue"))
+    print(colored(f"\nManually Stopped!", "blue"))
+    print(colored(f"A total of {index} combinations were calculated and written...", "blue"))
     exit(0)
     
 except IndexError:
-    print(colored("Program use: python wordlistgenerator.py <min> <max> <string> fileName.txt", "red"))
+    print(colored("Program usage: python wordlistgenerator.py <min> <max> <string> fileName.txt", "red"))
     exit(0)
     
 except ValueError:
-    print(colored("Program use: python wordlistgenerator.py <min> <max> <string> fileName.txt", "red"))
+    print(colored("Program usage: python wordlistgenerator.py <min> <max> <string> fileName.txt", "red"))
     exit(0)  
