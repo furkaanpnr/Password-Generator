@@ -1,5 +1,7 @@
 # Password-Generator
 
+### The program allows us to calculate all combinations of the desired length with the desired string values.
+
 ### Requirements
 
 ```
