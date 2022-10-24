@@ -1,0 +1,2 @@
+wordlist==1.0.1
+termcolor==2.0.1
