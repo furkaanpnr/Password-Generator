@@ -9,6 +9,8 @@
 ### Requirements
 
 ```
+  $> pip install -r requirements.txt
+  # or
   $> pip install wordlist 
   $> pip install termcolor
 ```
